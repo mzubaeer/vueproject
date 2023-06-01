@@ -94,3 +94,20 @@
 .navbar__list-item-link:hover::after{
     width: 100%;
 }
+@media screen and (max-width:768px){
+    .navbar__wrap{
+        flex-direction: column;
+        padding-top: 20px;
+    }
+    .navbar__list-item{
+        padding: 20px 0;
+    }
+    .navbar__list-item-link::after{
+        bottom: -20px;
+    }
+}
+@media screen and (max-width:350px){
+    .navbar__list{
+        gap: 15px;
+    }
+}
